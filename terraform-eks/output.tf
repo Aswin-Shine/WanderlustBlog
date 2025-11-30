@@ -60,3 +60,8 @@ output "public_subnets" {
   description = "List of IDs of public subnets"
   value       = module.vpc.public_subnets
 }
+
+output "ingress_nginx_loadbalancer" {
+  description = "Command to get the LoadBalancer URL for accessing applications"
+  value       = "kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'"
+}

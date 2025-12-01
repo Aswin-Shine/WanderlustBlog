@@ -20,7 +20,7 @@ spec:
     spec: 
       containers:
         - name: frontend
-          image: aswinshine/wanderlust-frontend-beta:v2
+          image: aswinshine/wanderlust-frontend-beta:v2.1
           ports:
             - containerPort: 5173
 

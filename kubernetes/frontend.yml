@@ -31,7 +31,6 @@ kind: Service
 metadata: 
   name: frontend-service
   namespace: wanderlust
-
 spec:
   type: NodePort
   selector: 

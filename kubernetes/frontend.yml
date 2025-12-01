@@ -5,13 +5,11 @@ metadata:
   namespace: wanderlust
   labels:
     app: frontend
-
 spec: 
   replicas: 1
   selector:
     matchLabels:
       app: frontend
-
   template: 
     metadata: 
       name: frontend
@@ -23,6 +21,8 @@ spec:
           image: aswinshine/wanderlust-frontend-beta:v2.3
           ports:
             - containerPort: 5173
+
+---
 
 # Frontend Service
 

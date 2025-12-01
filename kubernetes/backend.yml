@@ -6,19 +6,16 @@
   namespace: wanderlust
   labels:
     app: backend
-
  spec: 
    replicas: 1
    selector:
      matchLabels:
        app: backend
-
    template: 
      metadata:
        name: backend
        labels:
          app: backend
-    
      spec: 
        containers:
          - name: backend
@@ -33,7 +30,6 @@ kind: Service
 metadata:
   name: backend-service
   namespace: wanderlust 
-
 spec: 
   type: NodePort
   selector:

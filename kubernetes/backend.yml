@@ -1,26 +1,26 @@
- apiVersion: apps/v1
- kind: Deployment
- metadata:
-  name: backend-deployment
-  namespace: wanderlust
-  labels:
-    app: backend
- spec: 
-   replicas: 1
-   selector:
-     matchLabels:
-       app: backend
-   template: 
-     metadata:
-       name: backend
-       labels:
-         app: backend
-     spec: 
-       containers:
-         - name: backend
-           image: aswinshine/wanderlust-backend-beta:v2.3
-           ports:
-             - containerPort: 8080
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: backend-deployment
+ namespace: wanderlust
+ labels:
+   app: backend
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template: 
+    metadata:
+      name: backend
+      labels:
+        app: backend
+    spec: 
+      containers:
+        - name: backend
+          image: aswinshine/wanderlust-backend-beta:v2.3
+          ports:
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service

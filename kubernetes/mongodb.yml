@@ -32,7 +32,7 @@ spec:
     volumes:
       - name: mongo-storage
         persistentVolumeClaim
-          - claimName: mongo-pvc
+          claimName: mongo-pvc
 
 # MongoDB Service
 

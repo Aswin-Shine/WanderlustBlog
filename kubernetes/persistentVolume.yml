@@ -10,5 +10,6 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  hostpath:
-    path: /data/db
+  hostPath:          
+    path: "/data/db"
+    type: DirectoryOrCreate

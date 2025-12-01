@@ -30,9 +30,6 @@ spec:
             claimName: mongo-pvc
 
 ---
-
-# Redis Service
-
 apiVersion: v1
 kind: Service
 metadata:

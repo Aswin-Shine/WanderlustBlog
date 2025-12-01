@@ -7,24 +7,24 @@
   labels:
     app: backend
 
-spec: 
-  replicas: 1
-  selector:
-    matchLabels:
-      app: backend
+ spec: 
+   replicas: 1
+   selector:
+     matchLabels:
+       app: backend
 
-  template: 
-    metadata:
-      name: backend
-      labels:
-        app: backend
+   template: 
+     metadata:
+       name: backend
+       labels:
+         app: backend
     
-    spec: 
-      containers:
-        - name: backend
-          image: aswinshine/wanderlust-backend-beta:v2.1
-          ports:
-            - containerPort: 8080
+     spec: 
+       containers:
+         - name: backend
+           image: aswinshine/wanderlust-backend-beta:v2.1
+           ports:
+             - containerPort: 8080
 
 # Backend Service 
 

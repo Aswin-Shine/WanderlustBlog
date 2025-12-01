@@ -13,8 +13,8 @@ spec:
   template:
     metadata: 
       name: mongo
-        labels:
-          app: mongo
+      labels:
+        app: mongo
     spec: 
       containers:
         - name: mongo

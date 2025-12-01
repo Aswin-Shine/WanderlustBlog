@@ -22,7 +22,7 @@
      spec: 
        containers:
          - name: backend
-           image: aswinshine/wanderlust-backend-beta:v2.2
+           image: aswinshine/wanderlust-backend-beta:v2.3
            ports:
              - containerPort: 8080
 
